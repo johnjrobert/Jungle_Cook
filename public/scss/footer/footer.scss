@@ -1,0 +1,53 @@
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //   background-color: red;
+
+  .copy {
+    font-family: lato-it;
+    font-size: 15px;
+    padding-left: 50px;
+  }
+
+  .footerNav {
+  }
+
+  a {
+    font-family: lato-it;
+    font-size: 15px;
+    padding-left: 50px;
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .social {
+    height: 19px;
+    width: 80px;
+    // background-color: red;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    .face {
+      height: 19px;
+      width: 19px;
+      background-image: url(../assests/images/facebook.svg);
+    }
+
+    .insta {
+      height: 19px;
+      width: 19px;
+      background-image: url(../assests/images/instagram.svg);
+    }
+  }
+}

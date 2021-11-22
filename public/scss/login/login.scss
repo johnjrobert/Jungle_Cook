@@ -1,0 +1,112 @@
+.login {
+  height: 100%;
+  width: 100%;
+  background-color: #ffd972;
+  padding-top: 200px;
+  .login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      // background-color: red;
+      height: 285px;
+      justify-content: space-between;
+      padding-bottom: 50px;
+
+      h1 {
+        font-size: 30px;
+        font-family: lato-black;
+      }
+
+      .login-button {
+        width: 100%;
+        height: 52px;
+        background-color: #ffd972;
+        border-radius: 50px;
+        text-decoration: none;
+        color: black;
+        font-family: cav-reg;
+        font-size: 25px;
+        border: none;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .login-box {
+        width: 206.5px;
+        background: transparent;
+        border: none;
+        border-bottom: 3px solid #000000;
+      }
+    }
+
+    .signup-form {
+      display: flex;
+      flex-direction: column;
+      // background-color: red;
+      height: 450px;
+      justify-content: space-between;
+      margin-left: 250px;
+
+      .signup-box {
+        width: 250px;
+        background: transparent;
+        border: none;
+        border-bottom: 3px solid #000000;
+      }
+
+      .header-cont {
+        h2 {
+          font-size: 12px;
+          font-family: lato-it;
+        }
+
+        h1 {
+          font-size: 30px;
+          font-family: lato-black;
+          //   font-size: 70px;
+        }
+      }
+
+      .login-button {
+        width: 100%;
+        height: 52px;
+        background-color: #ffd972;
+        border-radius: 50px;
+        text-decoration: none;
+        color: black;
+        font-family: cav-reg;
+        font-size: 25px;
+        border: none;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .login-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 1000px;
+    padding-top: 200px;
+
+    .signup-form {
+      margin-left: 0px;
+      width: 206.5px;
+
+      .signup-box {
+        width: 206.5px;
+      }
+    }
+  }
+
+  footer {
+    position: relative;
+    background-color: #ffd972;
+  }
+}

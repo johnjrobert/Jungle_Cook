@@ -1,0 +1,117 @@
+.view-your-recipe {
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(167, 232, 189, 0.8)), to(rgba(167, 232, 189, 0.8))), url(../assests/images/recipe-hero.jpg);
+  background-image: linear-gradient(to right, rgba(167, 232, 189, 0.8), rgba(167, 232, 189, 0.8)), url(../assests/images/recipe-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.view-your-recipe .viewRecipeContainer {
+  width: 1099px;
+  height: 658px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.view-your-recipe .viewRecipeContainer .recipeTitleContainer .recipePageTitle {
+  font-family: cav-bold;
+  font-size: 25px;
+}
+.view-your-recipe .recipeContainer {
+  height: 576px;
+  width: 1106px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.view-your-recipe .recipeContainer .recipeCard {
+  width: 540px;
+  height: 264px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.view-your-recipe .recipeContainer .recipeCard .recipeImage {
+  height: 263px;
+  width: 300px;
+  border-radius: 24px;
+  background-color: green;
+}
+.view-your-recipe .recipeContainer .recipeCard .recipeContent {
+  height: 263px;
+  width: 224px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 24px;
+}
+.view-your-recipe .recipeContainer .recipeCard .recipeContent .recipeTitle {
+  font-family: lato-black;
+  font-size: 15px;
+}
+.view-your-recipe .recipeContainer .recipeCard .recipeContent .recipeInfo {
+  font-family: lato;
+  font-size: 9px;
+}
+.view-your-recipe .recipeContainer .recipeCard .recipeContent .recipeIcons {
+  height: 67px;
+  width: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: yellow;
+}
+.view-your-recipe .recipeContainer .recipeCard .recipeContent .recipeIcons .RecipeTime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.view-your-recipe .recipeContainer .recipeCard .recipeContent .recipeIcons .RecipeTime .recipeTimeIcon {
+  background-image: url(../assests/images/time.svg);
+  background-color: black;
+  height: 50px;
+  width: 50px;
+}

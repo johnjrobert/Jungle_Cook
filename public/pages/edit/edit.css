@@ -1,0 +1,177 @@
+.edit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+.edit .editPageTitleContainer {
+  margin-top: 150px;
+  width: 1000px;
+}
+.edit .editPageTitleContainer .editPageTitle {
+  font-size: 25px;
+  font-family: cav-bold;
+}
+.edit .inputForm {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1000px;
+  height: 1100px;
+  margin-bottom: 400px;
+}
+.edit .inputForm .recipeInputForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100px;
+  margin-bottom: 40px;
+}
+.edit .inputForm .recipeInputForm .recipeImageInput {
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #000000;
+  margin-bottom: 25px;
+}
+.edit .inputForm .recipeInputForm .recipeNameInput {
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #000000;
+  margin-bottom: 25px;
+}
+.edit .inputForm .recipeInputForm .recipeDescInput {
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #000000;
+  margin-bottom: 25px;
+}
+.edit .inputForm .recipeInputForm .recipeTimeInput {
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #000000;
+  margin-bottom: 25px;
+}
+.edit .inputForm .recipeInputForm .recipeServingInput {
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #000000;
+  margin-bottom: 25px;
+}
+.edit .inputForm .ingredientsInputForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100px;
+  margin-bottom: 40px;
+  font-family: lato-black;
+  font-size: 20px;
+}
+.edit .inputForm .ingredientsInputForm .ingredientOneInput {
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #000000;
+  margin-bottom: 25px;
+}
+.edit .inputForm .ingredientsInputForm .ingredientTwoInput {
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #000000;
+  margin-bottom: 25px;
+}
+.edit .inputForm .ingredientsInputForm .ingredientThreeInput {
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #000000;
+  margin-bottom: 25px;
+}
+.edit .inputForm .instructionsInputForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100px;
+  margin-bottom: 80px;
+  font-family: lato-black;
+  font-size: 20px;
+}
+.edit .inputForm .instructionsInputForm .instructionsOneInput {
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #000000;
+  margin-bottom: 25px;
+}
+.edit .inputForm .instructionsInputForm .instructionsTwoInput {
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #000000;
+  margin-bottom: 25px;
+}
+.edit .inputForm .instructionsInputForm .instructionsThreeInput {
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #000000;
+  margin-bottom: 25px;
+}
+.edit .inputForm .createRecipeButton {
+  margin: 0 auto;
+  width: 422px;
+  height: 52px;
+  background-color: #efa7a7;
+  border-radius: 50px;
+  text-decoration: none;
+  color: black;
+  font-family: cav-reg;
+  font-size: 25px;
+  border: none;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

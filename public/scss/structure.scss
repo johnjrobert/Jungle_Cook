@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "cav-reg";
+  src: url("fonts/Caveat-Regular.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "cav-it";
+  src: url("fonts/Caveat-Italic") format("woff2");
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("fonts/Lato-Regular.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "lato-black";
+  src: url("fonts/Lato-Black.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "lato-it";
+  src: url("fonts/Lato-Italic.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "cav-bold";
+  src: url("fonts/Caveat-Bold.ttf") format("woff2");
+}
