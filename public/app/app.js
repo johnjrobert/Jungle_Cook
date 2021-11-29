@@ -4,28 +4,29 @@ function initFirebase() {
       firebase
         .auth()
         .currentUser.updateProfile({
-          displayName: fullName,
+          // displayName: fullName,
         })
         .then(() => {
           UpdateSiteWithInfo();
         });
-      $(".pName").css("display", "block");
-      $(".pName").html(user.fName);
-      loadUserRecipe();
-    } else {
-      loadPublicRecipes();
-      console.log("user is not there");
-      $(".pName").css("display", "none");
-      _db = "";
+      // $(".pName").css("display", "block");
+      // $(".pName").html(user.fName);
+      // loadUserRecipe();
     }
+    // else {
+    //   loadPublicRecipes();
+    //   console.log("user is not there");
+    //   $(".pName").css("display", "none");
+    //   _db = "";
+    // }
   });
 }
 
 function UpdateSiteWithInfo() {
   let user = firebase.auth().currentUser;
   // fullName = firstName + " " + lastName;
-  $(".pName").html(user.displayName);
-  console.log(user.displayName);
+  // $(".pName").html(user.displayName);
+  // console.log(user.displayName);
 }
 
 function createUser() {
@@ -33,7 +34,7 @@ function createUser() {
   let email = "johnjrobert@gmail.com";
   let firstName = "John";
   let lastName = "Robert";
-  fullName = firstName + " " + lastName;
+  // fullName = firstName + " " + lastName;
 
   firebase
     .auth()
@@ -100,14 +101,55 @@ function route() {
 
 function initListeners() {
   LoginButton();
+  loginClick();
   route();
   $(window).on("hashchange", route);
 }
 
 function LoginButton() {
   $.get(`pages/login/login.html`, (data) => {
-    console.log(data);
+    // console.log(data);
     $("#app").html(data);
+  });
+}
+
+function loginClick() {
+  // $("#loginButtonClick").on("click", () => {
+  //   loginUser();
+  //   console.log("Logged in!");
+  // });
+  console.log("getting called");
+}
+
+function loadPublicRecipes() {
+  $("#app").empty();
+  $.getJSON("data/data.json", (recipe) => {
+    $.each(recipe.RECIPES, function (index, recipe) {
+      console.log("Recipe:" + recipe.recipeName);
+      $(".recipeImage").append(`<img href="${recipe.url}">`);
+      $(".recipeTitle").append(`<h1>${recipe.recipeTitle}</h1>`);
+      $(".recipeInfo").append(`${recipe.description}`);
+      $(".recipeTime").append(`${recipe.time}`);
+      $(".recipeServings").append(`${recipe.servings}`);
+    });
+    // recipe.USER_RECIPES;
+    console.log(recipe.USER_RECIPES);
+  }).fail((error) => {
+    console.log(error);
+  });
+}
+
+function loadUserRecipe() {
+  $("#app").empty();
+  $.getJSON("data/data.json", (recipe) => {
+    $.each(recipe.USER_RECIPES, function (index, recipe) {
+      // console.log("Recipe:" + recipe.recipeName);
+      $("#app").append(`<p>Recipes: ${recipe.recipeName}</p>`);
+    });
+    // recipe.USER_RECIPES;
+    console.log(recipe.USER_RECIPES);
+  }).fail((error) => {
+    console.log(error);
   });
 }
 
@@ -117,11 +159,7 @@ $(document).ready(() => {
     let app = firebase.app();
     initFirebase();
     initListeners();
-    loginUser();
-    signoutUser();
-    //dont use plus sign to add to the string. use a comma.
-    // console.log("The users first name is ", User.firstName);
-    // console.log("The recipes are ", RECIPES);
+    loadPublicRecipes();
   } catch {
     console.error(e);
   }

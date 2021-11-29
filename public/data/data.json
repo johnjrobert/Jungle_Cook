@@ -1,0 +1,78 @@
+{
+  "RECIPES": [
+    {
+      "recipeName": "Supreme Pizza",
+      "url": "../assests/images/recipe-pizza.jpg",
+      "description": [
+        "Sink your teeth into a delicious",
+        "restaurant-style, hamburger recipe ",
+        "made from lean beef. Skip the",
+        "prepackaged patties and take the ",
+        "extra time to craft up your own",
+        "and that little extra effort will be ",
+        "worth it."
+      ],
+      "time": "1hr 24min",
+      "servings": "4 Servings"
+    },
+    {
+      "recipeName": "Chicken Biryani",
+      "url": "../assests/images/recipe-pilaf.jpg",
+      "description": [
+        "Sink your teeth into a delicious",
+        "restaurant-style, hamburger recipe ",
+        "made from lean beef. Skip the",
+        "prepackaged patties and take the ",
+        "extra time to craft up your own",
+        "and that little extra effort will be ",
+        "worth it."
+      ],
+      "time": "1hr 15min",
+      "servings": "6 Servings"
+    },
+    {
+      "recipeName": "Classic Burger",
+      "url": "../assests/images/recipe-burger.jpg",
+      "description": [
+        "Sink your teeth into a delicious",
+        "restaurant-style, hamburger recipe ",
+        "made from lean beef. Skip the",
+        "prepackaged patties and take the ",
+        "extra time to craft up your own",
+        "and that little extra effort will be ",
+        "worth it."
+      ],
+      "time": "30 minutes",
+      "servings": "4 Servings"
+    },
+    {
+      "recipeName": "Ch. Chow Mein",
+      "url": "../assests/images/recipe-chowmein.jpg",
+      "description": [
+        "Sink your teeth into a delicious",
+        "restaurant-style, hamburger recipe ",
+        "made from lean beef. Skip the",
+        "prepackaged patties and take the ",
+        "extra time to craft up your own",
+        "and that little extra effort will be ",
+        "worth it."
+      ],
+      "time": "30 minutes",
+      "servings": "4 Servings"
+    }
+  ],
+  "USER_RECIPES": [
+    {
+      "recipeName": "Roast"
+    },
+    {
+      "recipeName": "Special Hamburger"
+    },
+    {
+      "recipeName": "Beef Pot Pie"
+    },
+    {
+      "recipeName": "Chicken Patty Melt"
+    }
+  ]
+}
